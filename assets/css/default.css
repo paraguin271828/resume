@@ -7,7 +7,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', serif;
   font-size: 1.6rem;
   font-weight: 300;
   color: #413d4b;
@@ -19,8 +19,29 @@ body {
   background: #fff;
 }
 
+#wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+  max-width: 992px;
+}
+
+main {
+  display: flex; /* add flex to reorder child sections */
+}
+
 section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+#skills {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  background: #171347;
+}
+#profile {
+  order: 2;
 }
