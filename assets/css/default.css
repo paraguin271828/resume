@@ -11,17 +11,16 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: #413d4b;
-  text-align: center;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #fff;
+  background: #bfc9ca;
 }
 
 #wrapper {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 15px;
   width: 100%;
   max-width: 992px;
 }
@@ -36,12 +35,108 @@ section {
   justify-content: space-between;
 }
 
+article {
+  margin-bottom: 3rem;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+header h1 {
+  position: relative;
+}
+header h1::after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 25px);
+  bottom: -2px;
+  width: 50px;
+  height: 2px;
+  background: #47bac1;
+}
+
 #skills {
+  color: #fff;
+  font-size: 90%;
   display: flex;
   flex-direction: column;
   order: 1;
-  background: #171347;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px 0 0 10px;
+  background: #354052;
 }
+
+.skills_list li {
+  color: #333;
+  font-size: 1.4rem;
+  text-align: right;
+  position: relative;
+  margin: 5px auto;
+  padding: 0 10px 0 0;
+  background: #495057;
+}
+.skills_list > li > span {
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px 5px;
+  background: #47bac1;
+  z-index: 5;
+}
+.skills_list > li > div {
+  font-size: 85%;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  padding: .1rem .45rem;
+  transform: translateY(-50%);
+  border-radius: 5px;
+  background: #5fc868;
+  z-index: 10;
+}
+
 #profile {
   order: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 0 10px 10px 0;
+  background: #fff;
+}
+
+.image_container {
+  position: relative;
+  width: 100%;
+}
+.image_container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media all and (max-width: 767px) {
+  #profile, #skills {
+    border-radius: 0;
+  }
 }
