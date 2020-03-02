@@ -7,55 +7,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="robots" content="noindex" />
   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/default.css">
 </head>
 
 <body>
   <div id="wrapper">
-    <header>
+    <header class="container">
       <h1>Dennis Weller</h1>
       <h3>Freelance Web Developer</h3>
     </header>
 
-    <main>
-      <section id="profile">
-        <article id="aboutme">
-          <h2>Profile</h2>
-          <p>The preparation of these cauliflower hot wings takes some time, but the steps are very easy!</p>
-        </article>
-        <article id="work_xp">
-        </article>
-      </section>
+    <main class="container">
+      <div class="row">
+        <section id="profile" class="col">
+          <article id="aboutme">
+            <h2>Profile</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </p>
+          </article>
+          <article id="work_xp">
+            <h2>Work experience</h2>
 
-      <section id="skills">
-        <figure class="qr_conainer">
-          <img src="assets/img/guy-fawkes.jpg" alt="Guy Fawkes">
-        </figure>
+            <h3>Project #1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-        <article>
-          <h2>Skills</h2>
-          <ul>
-            <li>24 small white corn tortillas</li>
-          </ul>
-        </article>
+            <h3>Project #2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 
-        <article id="contact">
-          <h2>Contact</h2>
-          <ul>
-            <li class="street"></li>
-          </ul>
-        </article>
+            <h3>Project #3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </article>
+        </section>
 
-        <figure class="qr_conainer">
-          <img src="assets/img/qr.jpg" alt="QR Code">
-          <span class="annotation">Annotation</span>
-        </figure>
-      </section>
+        <section id="skills" class="col col-12 col-md-4 col-lg-3">
+          <figure class="image_container profile_image">
+            <img src="assets/img/guy-fawkes.jpg" alt="Guy Fawkes">
+          </figure>
 
+          <article>
+            <h2>Skills</h2>
+            <ul class="skills_list">
+              <li><span class="align-middle col-10">Linux</span> <div>10+ yrs</div></li>
+              <li><span class="align-middle col-10">Open Source Tools</span> <div>10+ yrs</div></li>
+              <li><span class="align-middle col-12">HTML/CSS</span> <div>15+ yrs</div></li>
+              <li><span class="align-middle col-3">Git</span> <div>1+ yrs</div></li>
+              <li><span class="align-middle col-6">LAMP + nginx</span> <div>4+ yrs</div></li>
+            </ul>
+          </article>
+
+          <article id="contact">
+            <h2>Contact</h2>
+            <ul class="fa-ul">
+              <li class="location">
+                <i class="fa fa-li fa-map-marker"></i>
+                Some street 1<br>12345 Some City
+              </li>
+              <li class="phone">
+                <i class="fa fa-li fa-mobile-phone"></i>
+                <a href="tel:+49 1234 5678910">+49 1234 5678910</a>
+              </li>
+              <li class="email">
+                <i class="fa fa-li fa-envelope"></i>
+                <a href="mailto:someone@example.com">someone@example.com</a>
+              </li>
+              <li class="matrix">
+                <i class="fa fa-li fa-matrix-org"></i>
+                @someone:matrix.org
+              </li>
+              <li class="mastodon">
+                <i class="fa fa-li fa-mastodon"></i>
+                @someone@mastodon.xyz
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h2>Education</h2>
+            <p>
+              I'm not like them but I can pretend
+              <br>The sun is gone but I have a light
+              <br>The day is done but I'm having fun
+              <br>I think I'm dumb or maybe I'm just happy
+              <br>I think I'm just happy
+              <br>I think I'm just happy
+              <br>I think I'm just happy
+              <br><br><em>-- Dumb by Nirvana</em>
+              </p>
+          </article>
+
+          <article>
+            <h2>Languages</h2>
+            <ul>
+              <li>German (native)</li>
+              <li>English (C1)</li>
+          </article>
+        </section>
+      </div>
     </main>
 
-    <footer>
+    <footer class="container">
     </footer>
   </div>
 </body>
