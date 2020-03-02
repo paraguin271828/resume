@@ -85,7 +85,7 @@ header h1::after {
   position: relative;
   margin: 5px auto;
   padding: 0 10px 0 0;
-  background: linear-gradient(to right, #47bac1, aquamarine);
+  background: #495057;
 }
 .skills_list > li > span {
   font-weight: 700;
@@ -97,7 +97,7 @@ header h1::after {
   left: 0;
   margin: 0;
   padding: 10px 5px;
-  background: #47bac1;
+  background: linear-gradient(to right, #47bac1, aquamarine);
   z-index: 5;
 }
 .skills_list > li > div {
